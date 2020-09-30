@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo list</title>
+	<style type="text/css">
+		body{
+			 background-color: #F62459;
+			  padding-left: 5%;
+			  color: white;
+			  font-size: 1.5rem;
+			  line-height: 2;
+			  letter-spacing: 1px;
+		}
+		#heading{
+			font-size: 3.5rem;  
+				}
+		.sub{
+			font-size: 2rem;
+		}
+		#listItems{
+			margin-top: 80%;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="heading">Todo List</h1>
+	<h3 class="sub">Time is precious. Lost time is never found again!</h3>
+	<div id="listItems">
+	 <p>Here is a planner to store all your planned activities for today. Enter "new" to start creating your todo list</p>
+	 <h3 class="sub">Enter one of the options below:-</h3>
+<ul>
+	<li>"new" enter a new activity</li>
+	<li>"delete" to delete an activity</li>
+	<li>"view" view the todo list</li>
+	<li>"quit" close the todo list</li>
+</ul>
+</div>
+<script type="text/javascript">
+	var todo=[];
+	window.setTimeout(function() {
+	var input=prompt("Please enter any of the following options to proceed");
+	while(input!=="quit"){
+		 if(input==="new"){
+		//ask for new todo
+		var newTodo=prompt("Enter a new activity you would like to do");
+		todo.push(newTodo);
+		}
+		 else if(input==="view"){
+		 	if(todo.length==0){
+	 		alert("Your todo list is empty. Enter a new activity to view");
+		}
+		alert("The activities you wish to do are: "+todo);
+		}
+	
+	else if(input==="delete"){
+		var del=prompt("Enter the activity to be deleted");
+		var delIndex=todo.indexOf(del);
+		todo = todo.splice(delIndex,1);
+	}
+	 input=prompt("If you wish to view your todo list enter "view" or if you want to add one more activity enter new again or enter "quit" to close");
+	}
+
+	alert("Thank you for visiting the website. Time is the currency of life! Use it judiciously");
+
+}, 500);
+</script>
+</body>
+</html>

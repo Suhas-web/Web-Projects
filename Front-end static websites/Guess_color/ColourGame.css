@@ -1,0 +1,77 @@
+body{
+	background-color: #232323;
+	font-family: "Avenir", "Monsterrat";
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#span1{
+font-size: 200%;
+}
+
+#message{
+	display: inline-block;
+	width: 30%;
+	color: steelblue;
+	letter-spacing: 1.1;
+	font-weight: bold;
+	font-family: "Avenir", "Monsterrat";
+	font-size: inherit;
+}
+.square{
+	width: 30%;
+	padding-bottom: 30%;
+	margin : 1.66%;
+	float: left;
+	background-color: purple;
+	border-radius: 15%;
+	transition: background-color 0.4s;
+}
+
+#container{
+	max-width: 600px;
+	margin: 5% auto;
+}
+#reset{
+	width:150px;
+}
+
+h1{
+	font-weight: normal;
+	color: white;
+	background-color: steelblue;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	line-height: 1.1;
+	letter-spacing: 1.1;
+}
+
+#stripe{
+	background-color: white;
+	text-align: center;
+	height: 30px;
+}
+
+.selected{
+	background-color: steelblue;
+	color: white;
+}
+
+button{
+	text-transform: inherit;
+	border: none;
+	background-color: inherit;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	height: 100%;
+	transition: all 0.3s;
+	outline: none;
+}
+
+button:hover{
+	color:white;
+	background-color: steelblue;
+}

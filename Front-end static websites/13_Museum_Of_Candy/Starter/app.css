@@ -1,0 +1,40 @@
+body{
+	background-color: #f5d9d5;
+	font-family: "Nunito", sans-serif;
+}
+
+/*navbar*/
+#mainNavbar .navbar-brand{
+	color: #ea1c2c;
+}
+
+#mainNavbar{
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+#mainNavbar .nav-link{
+	color: #fff;
+}
+
+#mainNavbar .nav-link:hover{
+color: #ea1c2c;
+}
+
+/*museum of candy*/
+
+#headingsgroup span{
+	color: #ea1c2c;
+}
+
+#headingsgroup h1{
+	font-weight: 100;
+	font-size: 4rem ;
+}
+
+@media (max-width: 1200px){
+	#headingsgroup h1{
+	font-weight: 100;
+	font-size: 3rem ;
+}
+}
